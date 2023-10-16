@@ -1,10 +1,11 @@
-python train.py \
-    --out_dir="outmini" \
-    --batch_size=128 \
+python train_pippa.py \
+    --out_dir="PIPPA/outmini" \
+    --init_from="resume" \
+    --batch_size=64 \
     --max_seq_len=512 \
     --gradient_accumulation_steps=1 \
-    --vocab_source="llama2" \
-    --vocab_size=32000 \
+    --vocab_source="custom" \
+    --vocab_size=12000 \
     --dim=64 \
     --n_layers=5 \
     --n_heads=8 \
